@@ -1,0 +1,15 @@
+#include "Viento.h"
+#include <iostream>
+
+using namespace std;
+
+Viento::Viento(const string& marca, const string& modelo, double precio, const string& descripcion):Product(marca, modelo, precio, descripcion)
+{
+}
+
+
+void Viento::mostrarDetalles()
+{
+    cout << "Producto de Viento: ";
+    Product::mostrarDetalles();
+}
